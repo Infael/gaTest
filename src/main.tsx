@@ -46,7 +46,10 @@ const router = createBrowserRouter(
         }
       />
     </Route>
-  )
+  ),
+  {
+    basename: "/gaTest",
+  }
 );
 
 createRoot(document.getElementById("root")!).render(

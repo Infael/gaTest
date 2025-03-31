@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "pnpm run build && git checkout gh-pages && rm -rf * && cp -r dist/* . && git add . && git commit -m 'Deploy' && git push -f origin gh-pages && git checkout main"
+    "deployToPages": "pnpm run build && git checkout gh-pages && git rm -rf * && cp -r ./dist/* . && git add . && git commit -m 'Deploy' && git push -f origin gh-pages && git checkout master"
   },
   "dependencies": {
     "react": "^19.0.0",
